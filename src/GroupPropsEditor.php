@@ -124,13 +124,12 @@ if (mysqli_num_rows($rsPropList) == 0) {
 } else {
     ?>
 
-  <div class="box ">
+  <div class="card">
     <div class="card-header">
       <h3 class="card-title"><?= gettext('Editing') ?> <i> <?= $grp_Name ?> </i> <?= gettext('data for member') ?> <i> <?= $per_FirstName . ' ' . $per_LastName ?> </i></h3>
     </div>
     <div class="card-body">
       <form method="post" action="GroupPropsEditor.php?<?= 'PersonID=' . $iPersonID . '&GroupID=' . $iGroupID ?>" name="GroupPropEditor">
-
         <table class="table">
           <?php
 
